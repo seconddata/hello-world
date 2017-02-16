@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1)" Category="CodeSchema_Assembly" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime.UIWpf\bin\Debug\WorkTime.UIWpf.exe" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime.UIWpf\bin\Debug\WorkTime.UIWpf.exe" />
+    <Node Id="(@10)" Category="CodeSchema_Assembly" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\WorkTime.SL.dll" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\WorkTime.SL.dll" />
+    <Node Id="(@2)" ConfigurationName="Debug|AnyCPU" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime.UIWpf\WorkTime.UIWpf.csproj" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime.UIWpf\WorkTime.UIWpf.csproj" />
+    <Node Id="(@3)" ConfigurationName="Debug|AnyCPU" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\Worktime.CrossCutting\Worktime.CrossCutting.csproj" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\Worktime.CrossCutting\Worktime.CrossCutting.csproj" />
+    <Node Id="(@4)" ConfigurationName="Debug|AnyCPU" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\WorkTime.BL.csproj" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\WorkTime.BL.csproj" />
+    <Node Id="(@5)" ConfigurationName="Debug|AnyCPU" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.DBL\WorkTime.DBL.csproj" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.DBL\WorkTime.DBL.csproj" />
+    <Node Id="(@6)" ConfigurationName="Debug|AnyCPU" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\WorkTime.SL.csproj" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\WorkTime.SL.csproj" />
+    <Node Id="(@7)" Category="CodeSchema_Assembly" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\Worktime.CrossCutting\bin\Debug\Worktime.CrossCutting.dll" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\Worktime.CrossCutting\bin\Debug\Worktime.CrossCutting.dll" />
+    <Node Id="(@8)" Category="CodeSchema_Assembly" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\bin\Debug\WorkTime.BL.dll" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\bin\Debug\WorkTime.BL.dll" />
+    <Node Id="(@9)" Category="CodeSchema_Assembly" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.DBL\bin\Debug\WorkTime.DBL.dll" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.DBL\bin\Debug\WorkTime.DBL.dll" />
+  </Nodes>
+  <Links>
+    <Link Source="(@2)" Target="(@1)" Category="Produces" />
+    <Link Source="(@3)" Target="(@7)" Category="Produces" />
+    <Link Source="(@4)" Target="(@8)" Category="Produces" />
+    <Link Source="(@5)" Target="(@9)" Category="Produces" />
+    <Link Source="(@6)" Target="(@10)" Category="Produces" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Assembly" Label="Assembly" BasedOn="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" NavigationActionLabel="Assemblies" />
+    <Category Id="File" Label="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" NavigationActionLabel="Files" />
+    <Category Id="Produces" Label="Produces" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Produced By" OutgoingActionLabel="Produces" />
+  </Categories>
+  <Properties>
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="ConfigurationName" Label="ConfigurationName" Description="ConfigurationName" DataType="System.String" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="FilePath" Label="File Path" Description="File Path" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime.UIWpf/bin/Debug/WorkTime.UIWpf.exe" />
+    <Alias n="2" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime.UIWpf/WorkTime.UIWpf.csproj" />
+    <Alias n="3" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/Worktime.CrossCutting/Worktime.CrossCutting.csproj" />
+    <Alias n="4" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime/WorkTime.BL/WorkTime.BL.csproj" />
+    <Alias n="5" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime/WorkTime.DBL/WorkTime.DBL.csproj" />
+    <Alias n="6" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime/WorkTime.SL/WorkTime.SL.csproj" />
+    <Alias n="7" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/Worktime.CrossCutting/bin/Debug/Worktime.CrossCutting.dll" />
+    <Alias n="8" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime/WorkTime.BL/bin/Debug/WorkTime.BL.dll" />
+    <Alias n="9" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime/WorkTime.DBL/bin/Debug/WorkTime.DBL.dll" />
+    <Alias n="10" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime/WorkTime.SL/bin/Debug/WorkTime.SL.dll" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="Personal" Value="C:\Users\fcea4af\Documents" />
+    <Path Id="PersonalUri" Value="file:///C:/Users/fcea4af/Documents" />
+  </Paths>
+</DirectedGraph>

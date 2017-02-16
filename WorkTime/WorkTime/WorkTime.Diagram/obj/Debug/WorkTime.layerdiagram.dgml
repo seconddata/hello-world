@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1)" Category="File" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.Diagram\WorkTime.layerdiagram" Label="WorkTime.layerdiagram" />
+    <Node Id="8b0fd0c9-0d31-4d17-ad42-8303fcc2f4b7" Category="Dsl.LayerModel" Dsl.DiagramPath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.Diagram\WorkTime.layerdiagram" Dsl.QualifiedName="" Label="WorkTime" />
+    <Node Id="d4f3f618-3f67-4ab1-99bf-e33aff3d7a17" Category="Dsl.Layer" Dsl.ForbiddenNamespaceDependencies="" Dsl.ForbiddenNamespace="" Dsl.RequiredNamespace="" Dsl.QualifiedName="Database Layer" Label="Database Layer" />
+    <Node Id="4721d8e7-d83c-44ce-b216-ec56180e7f88" Category="Dsl.Layer" Dsl.ForbiddenNamespaceDependencies="" Dsl.ForbiddenNamespace="" Dsl.RequiredNamespace="" Dsl.QualifiedName="Business Layer" Label="Business Layer" />
+    <Node Id="bb8bdd94-7742-479e-8b7f-9401a09ac2a7" Category="Dsl.Layer" Dsl.ForbiddenNamespaceDependencies="" Dsl.ForbiddenNamespace="" Dsl.RequiredNamespace="" Dsl.QualifiedName="Service Layer" Label="Service Layer" />
+    <Node Id="22715dbb-07dd-44b6-97e9-aa281ad5c442" Category="Dsl.Layer" Dsl.ForbiddenNamespaceDependencies="" Dsl.ForbiddenNamespace="" Dsl.RequiredNamespace="" Dsl.QualifiedName="Worktime.CrossCutting" Label="Worktime.CrossCutting" />
+    <Node Id="a3c0106e-5f57-41b6-8d1c-bcb7b10b7299" Category="Dsl.Layer" Dsl.ForbiddenNamespaceDependencies="" Dsl.ForbiddenNamespace="" Dsl.RequiredNamespace="" Dsl.QualifiedName="WorkTime.UIWpf" Label="WorkTime.UIWpf" />
+    <Node Id="2b1de1cc-acff-4af6-b757-521ba64dfd73" Category="Dsl.Reference" Dsl.SupportsValidation="True" Dsl.QualifiedName="Database Layer.WorkTime.DBL" Label="WorkTime.DBL" />
+    <Node Id="(@2)" />
+    <Node Id="2e60d774-61f2-46de-aaaa-69543ccf3c79" Category="Dsl.Reference" Dsl.SupportsValidation="True" Dsl.QualifiedName="Business Layer.WorkTime.BL" Label="WorkTime.BL" />
+    <Node Id="(@3)" />
+    <Node Id="0ac4694d-bba6-4825-ad4e-9ae85ab47a02" Category="Dsl.Reference" Dsl.SupportsValidation="True" Dsl.QualifiedName="Service Layer.WorkTime.SL" Label="WorkTime.SL" />
+    <Node Id="(@4)" />
+    <Node Id="9bc6a11f-5e62-45ef-a267-a86912bb3091" Category="Dsl.Reference" Dsl.SupportsValidation="True" Dsl.QualifiedName="Worktime.CrossCutting.Worktime.CrossCutting" Label="Worktime.CrossCutting" />
+    <Node Id="(@5)" />
+    <Node Id="acff633a-ea6e-49df-b7ff-b14718bee3d9" Category="Dsl.Reference" Dsl.SupportsValidation="True" Dsl.QualifiedName="WorkTime.UIWpf.WorkTime.UIWpf" Label="WorkTime.UIWpf" />
+    <Node Id="(@6)" />
+  </Nodes>
+  <Links>
+    <Link Source="2b1de1cc-acff-4af6-b757-521ba64dfd73" Target="(@2)" Category="Produces">
+      <Category Ref="Represents" />
+    </Link>
+    <Link Source="2e60d774-61f2-46de-aaaa-69543ccf3c79" Target="(@3)" Category="Produces">
+      <Category Ref="Represents" />
+    </Link>
+    <Link Source="0ac4694d-bba6-4825-ad4e-9ae85ab47a02" Target="(@4)" Category="Produces">
+      <Category Ref="Represents" />
+    </Link>
+    <Link Source="9bc6a11f-5e62-45ef-a267-a86912bb3091" Target="(@5)" Category="Produces">
+      <Category Ref="Represents" />
+    </Link>
+    <Link Source="acff633a-ea6e-49df-b7ff-b14718bee3d9" Target="(@6)" Category="Produces">
+      <Category Ref="Represents" />
+    </Link>
+    <Link Source="8b0fd0c9-0d31-4d17-ad42-8303fcc2f4b7" Target="d4f3f618-3f67-4ab1-99bf-e33aff3d7a17" Category="Dsl.LayerModelHasLayers" />
+    <Link Source="8b0fd0c9-0d31-4d17-ad42-8303fcc2f4b7" Target="4721d8e7-d83c-44ce-b216-ec56180e7f88" Category="Dsl.LayerModelHasLayers" />
+    <Link Source="8b0fd0c9-0d31-4d17-ad42-8303fcc2f4b7" Target="bb8bdd94-7742-479e-8b7f-9401a09ac2a7" Category="Dsl.LayerModelHasLayers" />
+    <Link Source="8b0fd0c9-0d31-4d17-ad42-8303fcc2f4b7" Target="22715dbb-07dd-44b6-97e9-aa281ad5c442" Category="Dsl.LayerModelHasLayers" />
+    <Link Source="8b0fd0c9-0d31-4d17-ad42-8303fcc2f4b7" Target="a3c0106e-5f57-41b6-8d1c-bcb7b10b7299" Category="Dsl.LayerModelHasLayers" />
+    <Link Source="d4f3f618-3f67-4ab1-99bf-e33aff3d7a17" Target="2b1de1cc-acff-4af6-b757-521ba64dfd73" Category="Dsl.LayerHasReferences" />
+    <Link Source="4721d8e7-d83c-44ce-b216-ec56180e7f88" Target="2e60d774-61f2-46de-aaaa-69543ccf3c79" Category="Dsl.LayerHasReferences" />
+    <Link Source="bb8bdd94-7742-479e-8b7f-9401a09ac2a7" Target="0ac4694d-bba6-4825-ad4e-9ae85ab47a02" Category="Dsl.LayerHasReferences" />
+    <Link Source="22715dbb-07dd-44b6-97e9-aa281ad5c442" Target="9bc6a11f-5e62-45ef-a267-a86912bb3091" Category="Dsl.LayerHasReferences" />
+    <Link Source="a3c0106e-5f57-41b6-8d1c-bcb7b10b7299" Target="acff633a-ea6e-49df-b7ff-b14718bee3d9" Category="Dsl.LayerHasReferences" />
+    <Link Source="d4f3f618-3f67-4ab1-99bf-e33aff3d7a17" Target="22715dbb-07dd-44b6-97e9-aa281ad5c442" Category="Dsl.DependencyFromLayerToLayer" Dsl.Direction="Forward" />
+    <Link Source="4721d8e7-d83c-44ce-b216-ec56180e7f88" Target="d4f3f618-3f67-4ab1-99bf-e33aff3d7a17" Category="Dsl.DependencyFromLayerToLayer" Dsl.Direction="Forward" />
+    <Link Source="4721d8e7-d83c-44ce-b216-ec56180e7f88" Target="22715dbb-07dd-44b6-97e9-aa281ad5c442" Category="Dsl.DependencyFromLayerToLayer" Dsl.Direction="Forward" />
+    <Link Source="bb8bdd94-7742-479e-8b7f-9401a09ac2a7" Target="4721d8e7-d83c-44ce-b216-ec56180e7f88" Category="Dsl.DependencyFromLayerToLayer" Dsl.Direction="Forward" />
+    <Link Source="bb8bdd94-7742-479e-8b7f-9401a09ac2a7" Target="22715dbb-07dd-44b6-97e9-aa281ad5c442" Category="Dsl.DependencyFromLayerToLayer" Dsl.Direction="Forward" />
+    <Link Source="a3c0106e-5f57-41b6-8d1c-bcb7b10b7299" Target="bb8bdd94-7742-479e-8b7f-9401a09ac2a7" Category="Dsl.DependencyFromLayerToLayer" Dsl.Direction="Forward" />
+  </Links>
+  <Categories>
+    <Category Id="Dsl.DependencyFromLayerToLayer" Label="Dependency From Layer To Layer" CanLinkedNodesBeDataDriven="True" CanBeDataDriven="True" IncomingActionLabel="Dependency from Layers" OutgoingActionLabel="Dependency to Layers" />
+    <Category Id="Dsl.Layer" Label="Layer" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Layer" />
+    <Category Id="Dsl.LayerHasReferences" Label="Layer Has References" IsContainment="True" CanLinkedNodesBeDataDriven="True" CanBeDataDriven="True" IncomingActionLabel="Layer" OutgoingActionLabel="References" />
+    <Category Id="Dsl.LayerModel" Label="Layer Model" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Layer Model" />
+    <Category Id="Dsl.LayerModelHasLayers" Label="Layer Model Has Layers" IsContainment="True" CanLinkedNodesBeDataDriven="True" CanBeDataDriven="True" IncomingActionLabel="Layer Model" OutgoingActionLabel="Layers" />
+    <Category Id="Dsl.Reference" Label="Reference" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="Reference" />
+    <Category Id="File" Label="File" CanBeDataDriven="True" NavigationActionLabel="Files" DefaultAction="Microsoft.Contains" />
+    <Category Id="Produces" Label="Produces" OutgoingActionLabel="Produces" IncomingActionLabel="Produced By" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" />
+    <Category Id="Represents" Label="Represents" OutgoingActionLabel="Represents" IncomingActionLabel="Represented By" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IsContainment="True" />
+  </Categories>
+  <Properties>
+    <Property Id="FilePath" Label="File Path" Description="File Path" DataType="System.String" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="Dsl.DiagramPath" DataType="System.String" />
+    <Property Id="Dsl.QualifiedName" DataType="System.String" />
+    <Property Id="Dsl.ForbiddenNamespaceDependencies" DataType="System.String" />
+    <Property Id="Dsl.ForbiddenNamespace" DataType="System.String" />
+    <Property Id="Dsl.RequiredNamespace" DataType="System.String" />
+    <Property Id="Dsl.SupportsValidation" DataType="System.Boolean" />
+    <Property Id="Dsl.Direction" DataType="System.String" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime/WorkTime.Diagram/WorkTime.layerdiagram" />
+    <Alias n="2" Uri="Assembly=WorkTime.DBL" />
+    <Alias n="3" Uri="Assembly=WorkTime.BL" />
+    <Alias n="4" Uri="Assembly=WorkTime.SL" />
+    <Alias n="5" Uri="Assembly=Worktime.CrossCutting" />
+    <Alias n="6" Uri="Assembly=WorkTime.UIWpf" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="Personal" Value="C:\Users\fcea4af\Documents" />
+    <Path Id="PersonalUri" Value="file:///C:/Users/fcea4af/Documents" />
+  </Paths>
+</DirectedGraph>

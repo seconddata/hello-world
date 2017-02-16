@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8b0fd0c9-0d31-4d17-ad42-8303fcc2f4b7" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="d4f3f618-3f67-4ab1-99bf-e33aff3d7a17" name="Database Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="c8196307-84b2-4d44-b397-da9febb6d69e" direction="Forward">
+          <layerMoniker Id="22715dbb-07dd-44b6-97e9-aa281ad5c442" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="2b1de1cc-acff-4af6-b757-521ba64dfd73" name="WorkTime.DBL">
+          <ArtifactNode Label="WorkTime.DBL" Category="CodeSchema_Project" Id="(Assembly=../WorkTime.DBL/WorkTime.DBL.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=WorkTime.DBL)" Label="WorkTime.DBL.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="4721d8e7-d83c-44ce-b216-ec56180e7f88" name="Business Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="2a7cea9e-e6f8-49bf-9cd1-74242c3744e9" direction="Forward">
+          <layerMoniker Id="d4f3f618-3f67-4ab1-99bf-e33aff3d7a17" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="5645a32f-e39e-4c2d-a085-cdef9eff2862" direction="Forward">
+          <layerMoniker Id="22715dbb-07dd-44b6-97e9-aa281ad5c442" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="2e60d774-61f2-46de-aaaa-69543ccf3c79" name="WorkTime.BL">
+          <ArtifactNode Label="WorkTime.BL" Category="CodeSchema_Project" Id="(Assembly=../WorkTime.BL/WorkTime.BL.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=WorkTime.BL)" Label="WorkTime.BL.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="bb8bdd94-7742-479e-8b7f-9401a09ac2a7" name="Service Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="c5ed1e13-7dbc-424e-8220-657dfd6d1bca" direction="Forward">
+          <layerMoniker Id="4721d8e7-d83c-44ce-b216-ec56180e7f88" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="2b7128b4-4edc-408d-bfbc-a6485396ef7f" direction="Forward">
+          <layerMoniker Id="22715dbb-07dd-44b6-97e9-aa281ad5c442" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="0ac4694d-bba6-4825-ad4e-9ae85ab47a02" name="WorkTime.SL">
+          <ArtifactNode Label="WorkTime.SL" Category="CodeSchema_Project" Id="(Assembly=../WorkTime.SL/WorkTime.SL.csproj)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=WorkTime.SL)" Label="WorkTime.SL.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="22715dbb-07dd-44b6-97e9-aa281ad5c442" name="Worktime.CrossCutting">
+      <references>
+        <reference Id="9bc6a11f-5e62-45ef-a267-a86912bb3091" name="Worktime.CrossCutting">
+          <ArtifactNode Label="Worktime.CrossCutting" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/Worktime.CrossCutting/Worktime.CrossCutting.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=Worktime.CrossCutting)" Label="Worktime.CrossCutting.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="a3c0106e-5f57-41b6-8d1c-bcb7b10b7299" name="WorkTime.UIWpf">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="a9d2bc7d-6924-4ee3-8f58-b4fcd25e63a7" direction="Forward">
+          <layerMoniker Id="bb8bdd94-7742-479e-8b7f-9401a09ac2a7" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="acff633a-ea6e-49df-b7ff-b14718bee3d9" name="WorkTime.UIWpf">
+          <ArtifactNode Label="WorkTime.UIWpf" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime.UIWpf/WorkTime.UIWpf.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=WorkTime.UIWpf)" Label="WorkTime.UIWpf.exe" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.exe" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

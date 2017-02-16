@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{aea439ae-295e-43e4-bd79-92831d66cf07}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>WorkTime.Diagram</Name>
+    <RootNamespace>WorkTime.Diagram</RootNamespace>
+    <ValidateArchitecture>true</ValidateArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\WorkTime.Diagram.uml">
+      <SubType>Content</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="WorkTime.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="WorkTime.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>WorkTime.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="WorkTime.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>WorkTime.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Worktime.CrossCutting\Worktime.CrossCutting.csproj">
+      <Name>Worktime.CrossCutting</Name>
+      <Project>{0a0f983f-ccc8-480c-b8dd-12940c87e213}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WorkTime.UIWpf\WorkTime.UIWpf.csproj">
+      <Name>WorkTime.UIWpf</Name>
+      <Project>{3b6bf6f4-273c-4d25-8619-aeb1abf45089}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkTime.BL\WorkTime.BL.csproj">
+      <Project>{59a47c7c-677b-4359-8c73-5aa8554c2805}</Project>
+      <Name>WorkTime.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkTime.DBL\WorkTime.DBL.csproj">
+      <Project>{1b0ad6e0-164a-4821-bb68-c682a89994df}</Project>
+      <Name>WorkTime.DBL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WorkTime.SL\WorkTime.SL.csproj">
+      <Project>{17df1e91-f4f6-466d-8f64-17933c80f7c6}</Project>
+      <Name>WorkTime.SL</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

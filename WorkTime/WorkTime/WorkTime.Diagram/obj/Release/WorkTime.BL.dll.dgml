@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1)" ConfigurationName="Release|AnyCPU" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\WorkTime.BL.csproj" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\WorkTime.BL.csproj" />
+    <Node Id="(@2)" ConfigurationName="Release|AnyCPU" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.DBL\WorkTime.DBL.csproj" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.DBL\WorkTime.DBL.csproj" />
+    <Node Id="(@3)" ConfigurationName="Release|AnyCPU" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\WorkTime.SL.csproj" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\WorkTime.SL.csproj" />
+    <Node Id="@5" Category="CodeSchema_Assembly" CodeSchemaProperty_StrongName="WorkTime.BL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\bin\Release\WorkTime.BL.dll" Label="WorkTime.BL.dll">
+      <Category Ref="FileSystem.Category.FileOfType.dll" />
+    </Node>
+    <Node Id="@7" Category="CodeSchema_Assembly" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.DBL\bin\Release\WorkTime.DBL.dll" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.DBL\bin\Release\WorkTime.DBL.dll">
+      <Category Ref="FileSystem.Category.FileOfType.dll" />
+    </Node>
+    <Node Id="(@8)" Category="CodeSchema_Assembly" FilePath="$(Personal)\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Release\WorkTime.SL.dll" Label="C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Release\WorkTime.SL.dll">
+      <Category Ref="FileSystem.Category.FileOfType.dll" />
+    </Node>
+    <Node Id="(@9)" Category="CodeSchema_Assembly" CodeSchemaProperty_StrongName="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" Label="mscorlib.dll" />
+    <Node Id="@7" CodeSchemaProperty_IsExternal="True" CodeSchemaProperty_StrongName="WorkTime.DBL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Label="WorkTime.DBL.dll" />
+    <Node Id="@11" Category="CodeSchema_Type" CodeSchemaProperty_IsPublic="True" Label="WorkTimeWriter" />
+    <Node Id="@12" Category="CodeSchema_Namespace" Label="WorkTime" />
+    <Node Id="@13" Category="CodeSchema_Namespace" Label="WorkTime.BL" />
+    <Node Id="@14" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="WriteTimeToXML" />
+    <Node Id="@15" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsExternal="True" Label="XMLWriter" />
+    <Node Id="@16" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsExternal="True" Label="XMLWriter" />
+    <Node Id="(@4 @10 Type=WorkTimeWriter Member=.ctor)" Category="CodeSchema_Method" CodeSchemaProperty_IsSpecialName="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsConstructor="True" Label="WorkTimeWriter" />
+    <Node Id="@17" Category="CodeSchema_Namespace" CodeSchemaProperty_IsExternal="True" Label="WorkTime.DBL" />
+  </Nodes>
+  <Links>
+    <Link Source="(@1)" Target="@5" Category="Produces" />
+    <Link Source="(@2)" Target="@7" Category="Produces" />
+    <Link Source="(@3)" Target="(@8)" Category="Produces" />
+    <Link Source="@5" Target="(@9)" Category="References" />
+    <Link Source="@5" Target="@7" Category="References" />
+    <Link Source="@5" Target="@12" Category="CodeSchema_NamespaceReference" />
+    <Link Source="@12" Target="@13" Category="Contains" />
+    <Link Source="@5" Target="@13" Category="CodeSchema_NamespaceReference" />
+    <Link Source="@13" Target="@11" Category="Contains" />
+    <Link Source="@5" Target="@11" Category="Contains" />
+    <Link Source="@11" Target="@14" Category="Contains" />
+    <Link Source="@15" Target="@16" Category="Contains" />
+    <Link Source="@14" Target="@16" Category="CodeSchema_Calls" />
+    <Link Source="@11" Target="(@4 @10 Type=WorkTimeWriter Member=.ctor)" Category="Contains" />
+    <Link Source="@7" Target="@12" Category="CodeSchema_NamespaceReference" />
+    <Link Source="@12" Target="@17" Category="Contains" />
+    <Link Source="@7" Target="@17" Category="CodeSchema_NamespaceReference" />
+    <Link Source="@17" Target="@15" Category="Contains" />
+    <Link Source="@7" Target="@15" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Assembly" Label="Assembly" BasedOn="File" NavigationActionLabel="Assemblies" DefaultAction="Microsoft.Contains" CanBeDataDriven="True" />
+    <Category Id="CodeSchema_Calls" Label="Calls" IncomingActionLabel="Called By" OutgoingActionLabel="Calls" CanLinkedNodesBeDataDriven="True" CanBeDataDriven="True" />
+    <Category Id="CodeSchema_Member" Label="Member" CanBeDataDriven="True" NavigationActionLabel="Members" DefaultAction="Microsoft.Contains" />
+    <Category Id="CodeSchema_Method" Label="Method" BasedOn="CodeSchema_Member" CanBeDataDriven="True" NavigationActionLabel="Methods" DefaultAction="Link:Forward:CodeSchema_Calls" />
+    <Category Id="CodeSchema_Namespace" Label="Namespace" CanBeDataDriven="True" NavigationActionLabel="Namespaces" DefaultAction="Node:Both:CodeSchema_Type" />
+    <Category Id="CodeSchema_NamespaceReference" Label="Namespace Reference" CanLinkedNodesBeDataDriven="True" CanBeDataDriven="True" IncomingActionLabel="Namespace Reference Source" OutgoingActionLabel="Referenced Namespaces" />
+    <Category Id="CodeSchema_Type" Label="Type" CanBeDataDriven="True" NavigationActionLabel="Types" DefaultAction="Node:Both:CodeSchema_Member" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" IsContainment="True" IncomingActionLabel="Contained By" OutgoingActionLabel="Contains" CanLinkedNodesBeDataDriven="True" CanBeDataDriven="False" />
+    <Category Id="File" Label="File" NavigationActionLabel="Files" DefaultAction="Microsoft.Contains" CanBeDataDriven="True" />
+    <Category Id="FileSystem.Category.FileOfType.dll" BasedOn="CodeSchema_Assembly" IsProviderRoot="False" CanBeDataDriven="True" />
+    <Category Id="Produces" Label="Produces" CanLinkedNodesBeDataDriven="True" CanBeDataDriven="True" IncomingActionLabel="Produced By" OutgoingActionLabel="Produces" />
+    <Category Id="References" Label="References" CanLinkedNodesBeDataDriven="True" CanBeDataDriven="True" IncomingActionLabel="Referenced By" OutgoingActionLabel="References" />
+  </Categories>
+  <Properties>
+    <Property Id="ConfigurationName" Label="ConfigurationName" Description="ConfigurationName" DataType="System.String" />
+    <Property Id="FilePath" Label="File Path" Description="File Path" DataType="System.String" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="CodeSchemaProperty_StrongName" Label="StrongName" Description="StrongName" DataType="System.String" />
+    <Property Id="CodeSchemaProperty_IsExternal" Label="Is External" Description="Flag indicating whether this node is considered external" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Is Public" Description="Flag to indicate the scope is Public" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsConstructor" Label="Is Constructor" Description="Flag to indicate the method is a constructor" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsSpecialName" Label="Is Special Name" Description="Flag to indicate the method is treated in a special way by some compilers" DataType="System.Boolean" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+    <Name Id="Member" Label="Member" ValueType="System.Object" />
+    <Name Id="Name" Label="Name" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="Parameter" ValueType="Microsoft.VisualStudio.GraphModel.GraphNodeIdCollection" Formatter="NameValueNoEscape" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime/WorkTime.BL/WorkTime.BL.csproj" />
+    <Alias n="2" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime/WorkTime.DBL/WorkTime.DBL.csproj" />
+    <Alias n="3" Uri="Assembly=$(PersonalUri)/Visual Studio 2015/Projects/WorkTime/WorkTime/WorkTime.SL/WorkTime.SL.csproj" />
+    <Alias n="4" Uri="Assembly=WorkTime.BL" />
+    <Alias n="5" Id="(@4)" />
+    <Alias n="6" Uri="Assembly=WorkTime.DBL" />
+    <Alias n="7" Id="(@6)" />
+    <Alias n="8" Uri="Assembly=WorkTime.SL" />
+    <Alias n="9" Uri="Assembly=mscorlib" />
+    <Alias n="10" Id="Namespace=WorkTime.BL" />
+    <Alias n="11" Id="(@4 @10 Type=WorkTimeWriter)" />
+    <Alias n="12" Id="(Namespace=WorkTime)" />
+    <Alias n="13" Id="(@10)" />
+    <Alias n="14" Id="(@4 @10 Type=WorkTimeWriter Member=(Name=WriteTimeToXML OverloadingParameters=[(@9 Namespace=System Type=DateTime),(@9 Namespace=System Type=DateTime)]))" />
+    <Alias n="15" Id="(@6 Namespace=WorkTime.DBL Type=XMLWriter)" />
+    <Alias n="16" Id="(@6 Namespace=WorkTime.DBL Type=XMLWriter Member=.ctor)" />
+    <Alias n="17" Id="(Namespace=WorkTime.DBL)" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="Personal" Value="C:\Users\fcea4af\Documents" />
+    <Path Id="PersonalUri" Value="file:///C:/Users/fcea4af/Documents" />
+  </Paths>
+</DirectedGraph>

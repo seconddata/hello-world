@@ -1,0 +1,13 @@
+c:\users\fcea4af\documents\visual studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\WorkTime.SL.dll
+c:\users\fcea4af\documents\visual studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\WorkTime.SL.pdb
+c:\users\fcea4af\documents\visual studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\WorkTime.BL.dll
+c:\users\fcea4af\documents\visual studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\WorkTime.BL.pdb
+c:\users\fcea4af\documents\visual studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\obj\Debug\WorkTime.SL.csprojResolveAssemblyReference.cache
+c:\users\fcea4af\documents\visual studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\obj\Debug\WorkTime.SL.dll
+c:\users\fcea4af\documents\visual studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\obj\Debug\WorkTime.SL.pdb
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\WorkTime.DBL.dll
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\WorkTime.DBL.pdb
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\Worktime.CrossCutting.dll
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\Worktime.CrossCutting.pdb
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\WorkTime.Interface.dll
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.SL\bin\Debug\WorkTime.Interface.pdb

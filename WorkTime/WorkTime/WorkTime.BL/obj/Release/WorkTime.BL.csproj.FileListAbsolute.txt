@@ -1,0 +1,7 @@
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\bin\Release\WorkTime.BL.dll
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\bin\Release\WorkTime.BL.pdb
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\bin\Release\WorkTime.DBL.dll
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\bin\Release\WorkTime.DBL.pdb
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\obj\Release\WorkTime.BL.csprojResolveAssemblyReference.cache
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\obj\Release\WorkTime.BL.dll
+C:\Users\fcea4af\Documents\Visual Studio 2015\Projects\WorkTime\WorkTime\WorkTime.BL\obj\Release\WorkTime.BL.pdb
